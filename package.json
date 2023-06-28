@@ -43,7 +43,7 @@
     },
     "mac": {
       "artifactName": "${productName}_${platform}_${arch}_${version}.${ext}",
-      "icon": "./dist-electron/icons/icon.ico",
+      "icon": "./dist-electron/icons/icon.icns",
       "category": "public.app-category.graphics-design"
     },
     "linux": {

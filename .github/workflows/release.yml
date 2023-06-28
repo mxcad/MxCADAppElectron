@@ -38,7 +38,7 @@ jobs:
       - name: Upload Artifact Setup x64
         uses: actions/upload-artifact@v3
         with:
-          name: MxCADAppElectron-Win
+          name: release
           path: release/*
   Mac:
     name: Mac
@@ -76,7 +76,7 @@ jobs:
       - name: Upload Artifact Setup x64
         uses: actions/upload-artifact@v3
         with:
-          name: MxCADAppElectron-Mac
+          name: release
           path: release/*
   Linux:
     name: Linux
@@ -114,5 +114,5 @@ jobs:
       - name: Upload Artifact Setup x64
         uses: actions/upload-artifact@v3
         with:
-          name: MxCADAppElectron-Linux
+          name: release
           path: release/*

@@ -38,46 +38,46 @@ jobs:
       - name: Upload Artifact Setup x64
         uses: actions/upload-artifact@v3
         with:
-          name: release
+          name: release-win
           path: release/*
-  Mac:
-    name: Mac
-    runs-on: macos-latest
-    steps:
-      - name: Check out git repository
-        uses: actions/checkout@v3
+  # Mac:
+  #   name: Mac
+  #   runs-on: macos-latest
+  #   steps:
+  #     - name: Check out git repository
+  #       uses: actions/checkout@v3
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
+  #     - name: Install Node.js
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: '16'
 
-      - name: Cache file
-        uses: actions/cache@v3
-        with:
-          path: |
-            node_modules
-            $HOME/.cache/electron
-            $HOME/.cache/electron-builder
-            $HOME/.npm/_prebuilds
-          key: ${{ runner.os }}-build-caches-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-
-      - name: Install Dependencies
-        run: |
-          npm install
-      - name: Build Package dmg
-        run: |
-          npm run build:mac
-        env:
-          ELECTRON_CACHE: $HOME/.cache/electron
-          ELECTRON_BUILDERCACHE: $HOME/.cache/electron-builder
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      - name: Upload Artifact Setup x64
-        uses: actions/upload-artifact@v3
-        with:
-          name: release
-          path: release/*
+  #     - name: Cache file
+  #       uses: actions/cache@v3
+  #       with:
+  #         path: |
+  #           node_modules
+  #           $HOME/.cache/electron
+  #           $HOME/.cache/electron-builder
+  #           $HOME/.npm/_prebuilds
+  #         key: ${{ runner.os }}-build-caches-${{ hashFiles('**/package-lock.json') }}
+  #         restore-keys: |
+  #           ${{ runner.os }}-build-
+  #     - name: Install Dependencies
+  #       run: |
+  #         npm install
+  #     - name: Build Package dmg
+  #       run: |
+  #         npm run build:mac
+  #       env:
+  #         ELECTRON_CACHE: $HOME/.cache/electron
+  #         ELECTRON_BUILDERCACHE: $HOME/.cache/electron-builder
+  #         GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  #     - name: Upload Artifact Setup x64
+  #       uses: actions/upload-artifact@v3
+  #       with:
+  #         name: release
+  #         path: release/*
   Linux:
     name: Linux
     runs-on: ubuntu-latest
@@ -114,5 +114,5 @@ jobs:
       - name: Upload Artifact Setup x64
         uses: actions/upload-artifact@v3
         with:
-          name: release
+          name: release-linux
           path: release/*

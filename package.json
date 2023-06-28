@@ -13,10 +13,10 @@
     "start": "electron .",
     "preview": "vite build && vite",
     "build": "vite build",
-    "build:win": "vite build && electron-builder --win",
-    "build:linux": "vite build && electron-builder --linux",
-    "build:mac": "vite build && electron-builder --mac",
-    "build-icon": "vite build && electron-icon-builder --input=./src/assets/logo.png --output=dist-electron --flatten"
+    "build:win": "electron-builder --win",
+    "build:linux": "electron-builder --linux",
+    "build:mac": "electron-builder --mac",
+    "build-icon": "electron-icon-builder --input=./src/assets/logo.png --output=dist-electron --flatten"
   },
   "permissions": [
     "fileSystem"

@@ -1,0 +1,19 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.validate.enable": false,
+  "typescript.validate.enable": true,
+  "typescript.validate.enable": true,
+  "typescript.preferences.importModuleSpecifier": "project-relative",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.preferences.useAliasesForRenames": true,
+  "typescript.preferences.importStatementStyle": "relative",
+  "typescript.preferences.resolveJsonModule": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "cSpell.words": [
+    "Abortable"
+  ]
+}

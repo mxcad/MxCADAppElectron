@@ -1,0 +1,124 @@
+{
+  "name": "CADMxCloud",
+  "version": "7.0.0",
+  "main": "dist-electron/index.js",
+  "homepage": "/",
+  "author": {
+    "name": "成都梦想凯德科技有限公司",
+    "email": "1298095305@qq.com",
+    "url": "https://www.mxdraw3d.com/"
+  },
+  "scripts": {
+    "dev": "chcp 65001 && vite",
+    "start": "electron .",
+    "preview": "vite build && vite",
+    "build": "vite build",
+    "build:win": "vite build && electron-builder --win",
+    "build:linux": "vite build && electron-builder --linux",
+    "build:mac": "vite build && electron-builder --mac",
+    "build-icon": "vite build && electron-icon-builder --input=./src/assets/logo.png --output=dist-electron --flatten"
+  },
+  "permissions": [
+    "fileSystem"
+  ],
+  "build": {
+    "appId": "com.mxdraw3d.www",
+    "directories": {
+      "buildResources": "./resources",
+      "output": "release/${version}"
+    },
+    "files": [
+      "!node_modules/**/*",
+      "dist-electron",
+      "dist"
+    ],
+    "asar": false,
+    "extraResources": [],
+    "productName": "CAD梦想画图",
+    "copyright": "成都梦想凯德科技有限公司 版权所有 Copyright @ 2023 All Rights Reserved",
+    "extends": null,
+    "win": {
+      "icon": "./dist-electron/icons/icon.ico",
+      "artifactName": "${productName}_${arch}_${version}_.${ext}"
+    },
+    "mac": {
+      "artifactName": "${productName}_${platform}_${arch}_${version}.${ext}",
+      "icon": "./dist-electron/icons/icon.ico",
+      "category": "public.app-category.graphics-design"
+    },
+    "linux": {
+      "artifactName": "${productName}_${platform}_${arch}_${version}.${ext}",
+      "icon": "./dist-electron/icons",
+      "category": "Graphics;2DGraphics;ImageProcessing;"
+    },
+    "nsis": {
+      "oneClick": false,
+      "language": "2052",
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": false,
+      "license": "./licenses/license.txt",
+      "include": "./resources/installer.nsh",
+      "shortcutName": "CAD梦想画图",
+      "menuCategory": true,
+      "installerIcon": "./dist-electron/icons/icon.ico",
+      "uninstallerIcon": "./dist-electron/icons/icon.ico",
+      "installerHeaderIcon": "./dist-electron/icons/icon.ico",
+      "installerSidebar": "./resources/installerSidebar.bmp",
+      "uninstallerSidebar": "./resources/installerSidebar.bmp",
+      "createDesktopShortcut": true
+    },
+    "dmg": {
+      "background": "",
+      "icon": "./dist-electron/icons/icon.ico",
+      "contents": [
+        {
+          "x": 106,
+          "y": 252,
+          "name": "CAD梦想画图"
+        },
+        {
+          "x": 490,
+          "y": 252,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "title": "CAD梦想画图 v${version}"
+    },
+    "appImage": {
+      "license": "./licenses/license_zh.txt",
+      "category": "Graphics;2DGraphics;ImageProcessing;"
+    },
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://localhost:3000"
+      }
+    ],
+    "releaseInfo": {
+      "releaseNotes": "版本更新的具体内容"
+    }
+  },
+  "dependencies": {
+    "electron-log": "^4.4.8",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.7",
+    "@types/node": "^18.11.9",
+    "electron": "^23.2.0",
+    "electron-builder": "^23.6.0",
+    "electron-devtools-installer": "^3.2.0",
+    "electron-icon-builder": "^2.0.1",
+    "electron-store": "^8.1.0",
+    "electron-updater": "^5.3.0",
+    "eslint": "^8.33.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^4.0.0",
+    "vite": "^3.0.9",
+    "vite-plugin-electron": "^0.11.1"
+  }
+}

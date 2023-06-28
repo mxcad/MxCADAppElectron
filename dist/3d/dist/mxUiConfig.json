@@ -1,0 +1,65 @@
+{
+  "?mTitleButtonBarData:标题按钮栏数据": "标题按钮栏数据",
+  "mTitleButtonBarData": [
+    {
+      "icon": "dakaidwg",
+      "cmd": "OpenDwg",
+      "prompt": "打开DWG文件"
+    },
+    {
+      "icon": "baocun",
+      "cmd": "Mx_SaveAs",
+      "prompt": "保存图纸"
+    }
+  ],
+  "?mLeftButtonBarData:左侧按钮栏": "左侧按钮栏",
+  "mLeftButtonBarData": {
+    "isShow": true,
+    "buttonBarData": [
+      {
+        "icon": "zhixian",
+        "prompt": "绘线命令",
+        "cmd": "Mx_Line"
+      }
+    ]
+  },
+  "?mRightButtonBarData:右侧按钮栏": "右侧按钮栏",
+  "mRightButtonBarData": {
+    "isShow": true,
+    "buttonBarData": [
+      {
+        "icon": "shanchu",
+        "cmd": "Mx_Erase",
+        "prompt": "删除命令"
+      }
+    ]
+  },
+  "?mMenuBarData:菜单栏数据": "",
+  "mMenuBarData": [
+    {
+      "tab": "文件(F)",
+      "list": [
+        {
+          "tab": "打开DWG文件(M)",
+          "icon": "dakaidwg",
+          "cmd": "OpenDwg"
+        },
+        {
+          "tab": "保存(S)",
+          "icon": "baocun",
+          "cmd": "Mx_SaveAs"
+        }
+      ]
+    },
+    {
+      "tab": "帮助(H)",
+      "list": [
+        {
+          "tab": "关于(A)",
+          "icon": "guanyu",
+          "cmd": "MxCAD_About"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "?uploadFileConfig": "上传文件相关配置",
+  "uploadFileConfig": {
+    "?baseUrl": "上传服务地址",
+    "baseUrl": "http://localhost:1337",
+    "?create": "参考WebUploader.create方法传入的参数配置",
+    "create": {
+      "swf": "https://www.mxdraw3d.com/webuploader/Uploader.swf",
+      "server": "/mxcad/files/uploadFiles",
+      "accept": {
+        "extensions": "dwg,DWG",
+        "mimeTypes": ".dwg,.DwG"
+      }
+    },
+    "?fileisExist": "通过文件的md5参数检查文件是否已经存在",
+    "fileisExist": "/mxcad/files/fileisExist",
+    "?chunkisExist": "用于分片检查是否已经存在",
+    "chunkisExist": "/mxcad/files/chunkisExist",
+	"?mxfilepath": "文件上传后前端访问路径",
+	"mxfilepath": "/mxcad/file/",
+	"?saveUrl": "保存文件服务地址",
+	"saveUrl": "http://localhost:3337/mxcad/savefile"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "?mTitleButtonBarData:标题按钮栏数据": "标题按钮栏数据",
+  "mTitleButtonBarData": [
+    {
+      "icon": "dakaidwg",
+      "cmd": "OpenDwg",
+      "prompt": "打开DWG文件"
+    },
+    {
+      "icon": "baocun",
+      "cmd": "Mx_SaveAs",
+      "prompt": "保存图纸"
+    }
+  ],
+  "?mLeftButtonBarData:左侧按钮栏": "左侧按钮栏",
+  "mLeftButtonBarData": {
+    "isShow": true,
+    "buttonBarData": [
+      {
+        "icon": "zhixian",
+        "prompt": "绘线命令",
+        "cmd": "Mx_Line"
+      },
+      {
+        "icon": "duoxianduan",
+        "prompt": "绘多线段命令",
+        "cmd": "Mx_Pline"
+      },
+      {
+        "icon": "zhengduobianxing",
+        "cmd": "Mx_Polygon",
+        "prompt": "绘正多边形命令"
+      },
+      {
+        "icon": "juxing",
+        "cmd": "Mx_Rectang",
+        "prompt": "绘矩形框命令"
+      },
+      {
+        "icon": "yuanhu",
+        "cmd": "Mx_Arc",
+        "prompt": "绘圆弧命令"
+      },
+      {
+        "icon": "yuan",
+        "prompt": "圆",
+        "cmd": "Mx_Circle"
+      },
+      {
+        "icon": "yangtiaoxian",
+        "cmd": "Mx_Spline",
+        "prompt": "绘样条线命令"
+      },
+      {
+        "icon": "tuoyuan",
+        "cmd": "Mx_Ellipse",
+        "prompt": "绘椭圆命令"
+      },
+      {
+        "icon": "tuoyuanhu",
+        "cmd": "Mx_EllipseArc",
+        "prompt": "绘椭圆弧命令"
+      },
+
+      {
+        "icon": "danhangwenzi",
+        "cmd": "_DrawText",
+        "prompt": "写文字命令"
+      },
+      {
+        "icon": "charutupian",
+        "cmd": "_InsertImage",
+        "prompt": "插入图片命令"
+      },
+
+      {
+        "icon": "tianchong",
+        "cmd": "Mx_Hatch",
+        "prompt": "绘填充命令"
+      }
+    ]
+  },
+  "?mRightButtonBarData:右侧按钮栏": "右侧按钮栏",
+  "mRightButtonBarData": {
+    "isShow": true,
+    "buttonBarData": [
+      {
+        "icon": "shanchu",
+        "cmd": "Mx_Erase",
+        "prompt": "删除命令"
+      }
+    ]
+  },
+  "?mMenuBarData:菜单栏数据": "",
+  "mMenuBarData": [
+    {
+      "tab": "文件(F)",
+      "cmd": "Mx_open_file_options",
+      "isResponsive": true,
+      "list": [
+        {
+          "tab": "打开DWG文件(M)",
+          "icon": "dakaidwg",
+          "cmd": "OpenDwg"
+        },
+        {
+          "tab": "保存(S)",
+          "icon": "baocun",
+          "cmd": "Mx_SaveAs"
+        }
+      ]
+    },
+    {
+      "tab": "帮助(H)",
+      "list": [
+        {
+          "tab": "关于(A)",
+          "icon": "guanyu",
+          "cmd": "MxCAD_About"
+        }
+      ]
+    }
+  ]
+}

@@ -24,7 +24,7 @@
   "build": {
     "appId": "com.mxdraw3d.www",
     "directories": {
-      "buildResources": "./resources",
+      "buildResources": "resources",
       "output": "release/${version}"
     },
     "files": [
@@ -87,7 +87,7 @@
       "title": "CAD梦想画图 v${version}"
     },
     "appImage": {
-      "license": "./licenses/license_zh.txt",
+      "license": "./licenses/license.txt",
       "category": "Graphics;2DGraphics;ImageProcessing;"
     },
     "publish": [

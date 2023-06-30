@@ -4,3 +4,4 @@ out
 release
 rendererTypes
 src
+*.lock*

@@ -24,7 +24,6 @@
   "build": {
     "appId": "com.mxdraw3d.www",
     "directories": {
-      "buildResources": "resources",
       "output": "release/${version}"
     },
     "files": [
@@ -33,12 +32,12 @@
       "dist"
     ],
     "asar": false,
-    "extraResources": [],
     "productName": "CAD梦想画图",
     "copyright": "成都梦想凯德科技有限公司 版权所有 Copyright @ 2023 All Rights Reserved",
     "extends": null,
     "win": {
       "icon": "./dist-electron/icons/icon.ico",
+      "extraResources": ["resources/windows/**/*"],
       "artifactName": "${productName}_${arch}_${version}_.${ext}"
     },
     "mac": {
@@ -49,6 +48,7 @@
     "linux": {
       "artifactName": "${productName}_${platform}_${arch}_${version}.${ext}",
       "icon": "./dist-electron/icons",
+      "extraResources": ["resources/linux/*"],
       "category": "Graphics;2DGraphics;ImageProcessing;"
     },
     "nsis": {

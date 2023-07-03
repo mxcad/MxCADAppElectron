@@ -1,0 +1,8 @@
+su root
+chmod -R 777 *
+rm -r -f /mx
+cp -r -f ./mx /mx
+chmod -R 777 /mx/*
+cp -r -f ./mx/locale /usr/local/share/locale
+
+./node mxconvert.js 1.dwg

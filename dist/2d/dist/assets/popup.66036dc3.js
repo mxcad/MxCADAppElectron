@@ -1,1 +1,0 @@
-import{u as s}from"./index.d4c24131.js";import{c0 as i,r}from"./index.6d6dbeea.js";const n=i("popup",()=>{const{isShow:t,showDialog:o}=s(),e=r({title:"MxCAD\u8B66\u544A",text:"",cancelTitle:"\u53D6\u6D88",defineTitle:"\u786E\u5B9A"});return{open(u){o(!0),e.value={...e.value,...u}},isShow:t,showDialog:o,options:e}});export{n as u};

@@ -49,6 +49,7 @@
       "artifactName": "${productName}_${platform}_${arch}_${version}.${ext}",
       "icon": "./dist-electron/icons",
       "extraResources": ["resources/linux/*"],
+      "target": ["deb", "AppImage", "snap"],
       "category": "Graphics;2DGraphics;ImageProcessing;"
     },
     "nsis": {
